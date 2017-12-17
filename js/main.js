@@ -1,24 +1,25 @@
 /*every time now the $ is used it refers to jQuery*/
+function askQuestions () {
+	var firstName = prompt ('What is your first name');
+		var lastName = prompt ('What is your surname');
 
-var firstName = prompt ('What is your first name');
-	var lastName = prompt ('What is your surname');
+		var fullName = firstName + ' ' + lastName;
+		console.log(fullName);
+		if (firstName=='General' && lastName.toLowerCase() !='Assembly') {
+		console.log ('Hello General!'); 
+	}
 
-	var fullName = firstName + ' ' + lastName;
-	console.log(fullName);
-	if (firstName=='General' && lastName.toLowerCase() !='Assembly') {
-	console.log ('Hello General!'); 
-}
+	var age = prompt('How old are you');
+		age = parseInt(age);
+		console.log ('You are ' + age + ' years old');
 
-var age = prompt('How old are you');
-	age = parseInt(age);
-	console.log ('You are ' + age + ' years old');
-
-	if (age>=18) {
-		console.log ('You\'re an adult');
-	} else if (age>=13) {
-		console.log ('you are a teenager');
-	}else {
-	console.log ('You are a child');
+		if (age>=18) {
+			console.log ('You\'re an adult');
+		} else if (age>=13) {
+			console.log ('you are a teenager');
+		}else {
+		console.log ('You are a child');
+	}
 }
 
 
